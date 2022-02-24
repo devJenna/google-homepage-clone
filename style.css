@@ -1,0 +1,231 @@
+body {
+    background-color:#202124;
+    font-family: arial;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    }
+.header {
+    display:flex;
+    justify-content: space-between;
+    }
+.header-left {
+    display: flex;
+    padding: 5px 5px;
+    align-items: center;
+}
+.header-left a {
+    margin-left: 15px;
+}
+.header-left a:link {
+    color: #bdc1c6;
+    text-decoration: none;
+}
+.header-left a:visited {
+    color: #bdc1c6;
+}
+.header-right {
+    display: flex;
+    padding: 5px 5px;
+    align-items: center;
+    margin-right: 15px;
+}
+.header-right a {
+    padding: 5px;  
+}
+.header-right img {
+    padding: 15px;  
+}
+.header-right-content a {
+    text-decoration: none;
+    text-align: center;
+}
+.header-right-content a:link{
+    color: white;
+}
+.header-right-content a:visited {
+    color: white;
+}
+.header-left a:hover, .header-right-content a:hover {
+    text-decoration: underline;
+}
+.header-right-appsicon a {
+    text-decoration: none;
+    display: contents;
+}
+.header-right-appsicon a:visited {
+    color: #bdc1c6;
+}
+.header-right-appsicon img:hover {
+    background-color: rgba(211, 211, 211, 0.089);
+    border-radius: 50%; 
+    margin: 10px;
+    padding: 5px;
+}
+.header-right-signin a {
+    text-decoration: none;
+    background-color: #8ab5f8;
+    color: #202124;
+    display: inline-block;
+    text-align: center;
+    width: 60px;
+    padding: 10px;
+    border-radius: 3px;
+    margin-left: 5px;
+}
+.header-right-signin a:hover {
+    text-decoration: none;
+    background-color: #95bbf8;
+    } 
+.grandparent {
+    display: flex;
+    justify-content: center;
+    padding: 10px;  
+}
+.parent {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 150px;
+    background-color: #5d335d;
+    background-image: url("./img/google.png");
+    background-size: 350px 120px;
+    background-repeat: no-repeat;
+}
+.share {
+    position: absolute;
+    bottom: 5px;
+    right:5px;
+}
+form {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.search-section {
+    color: transparent;
+    opacity: 0.3;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid;
+    border-radius: 20px;
+    width: 80%;
+    background-color: #202124;
+    padding: 10px;
+    border-color: white;
+}
+.search-bar {
+    background-color: transparent;
+    opacity: 0.3;
+    text-align: left;
+    border: none;
+    width: 100%;
+    color: white;
+    outline: none;
+}
+.search-button {
+    text-align: center;
+    padding: 10px;
+}
+.search-section:hover {
+    background-color: #61656b;
+}
+.search-button button {
+    background-color: #303134;
+    color: #e8eaed;
+    display: inline-block;
+    padding: 10px 15px;
+    opacity: 0.9;
+    border-radius: 5px;
+}
+.search-button button:hover {
+    border-color: white;
+    border-width: 1px;
+}
+footer a:link {
+    color: #999da2;
+    text-decoration: none;
+}
+footer a:visited {
+    color: #999da2;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+.footers a {
+    margin: 10px;
+    padding: 5px;
+    white-space: nowrap;
+}
+footer {
+    background-color: #171717;
+    color: #999da2;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    margin-right: 0;
+    padding: 10px 0px 0px 0px;
+}
+.footers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    flex-flow: row wrap;
+    white-space: nowrap;
+    align-items: center;
+    text-align: center;
+}
+@media only screen and (max-width: 1200px){
+    .footers {
+        flex-flow: row wrap;
+        height: 100px;
+        justify-content: space-between;
+        text-align: center;
+    }
+    .footer-center  {
+        width: 100%;
+        order: 1;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-left {
+        width: 50%;
+        order: 2;
+    }
+    .footer-right {
+        order: 3;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 597px) {
+    .footers {
+        flex-flow: row wrap;
+        height: 150px;
+        justify-content: space-between;
+        text-align: center;
+    }
+    .footer-center {
+        width: 100%;
+        order: 0;
+    }
+    .footer-left {
+        width: 100%;
+        order: 1;
+        text-align: center;
+    }
+    .footer-right {
+        width: 100%;
+        order: 2;
+        text-align: center;
+    }
+}
